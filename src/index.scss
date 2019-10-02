@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+
+$fontHadlee: 'Handlee', cursive;
+
 *,
 html,
 body {
@@ -5,6 +9,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: $fontHadlee;
 
   .container {
     margin: 2rem auto;
@@ -13,7 +18,9 @@ body {
     border-radius: 2rem;
     width: 80rem;
     h1 {
-      font-size: 3.4rem;
+      font-size: 3.8rem;
+      font-weight: bold;
+      text-align: center;
     }
     h2 {
       font-size: 2.6rem;
@@ -23,6 +30,17 @@ body {
     }
     p {
       font-size: 2rem;
+    }
+    button {
+      font-size: 2rem;
+      width: 20%;
+    }
+    input {
+      font-size: 2rem;
+      width: 40%;
+    }
+    form {
+      text-align: center;
     }
   }
 }
