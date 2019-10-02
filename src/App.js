@@ -1,8 +1,9 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
+import './index.scss';
 
 const App = () => {
   const [news, setNews] = useState([]);
-  const [searchQuery, setSearchQuery] = useState("react");
+  const [searchQuery, setSearchQuery] = useState('react');
   const [url, setUrl] = useState(
     `https://hn.algolia.com/api/v1/search?query=react`
   );
@@ -30,8 +31,8 @@ const App = () => {
     setUrl(`https://hn.algolia.com/api/v1/search?query=${searchQuery}`);
   };
   return (
-    <div>
-      {loading ? <h2>... Loading!</h2> : <h2>Hacker News</h2>}
+    <div className="container">
+      {loading ? <h1>... Loading!</h1> : <h1>Hacker News</h1>}
       <form onSubmit={handleSubmit}>
         <input type="text" value={searchQuery} onChange={handleChange} />
         <button>Search</button>
